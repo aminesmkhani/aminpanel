@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:tailwindcs": "tailwind build src/style.css -o public/style.css"
+    "build:aminpanel": "tailwind build src/style.css -o public/style.css"
   },
   "repository": {
     "type": "git",
