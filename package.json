@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aminesmkhani/aminpanel/issues"
   },
-  "homepage": "https://github.com/aminesmkhani/aminpanel#readme"
+  "homepage": "https://github.com/aminesmkhani/aminpanel#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.16"
+  }
 }
