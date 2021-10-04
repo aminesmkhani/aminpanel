@@ -634,6 +634,16 @@ video {
   }
 }
 
+@font-face {
+  font-family: "Bakh";
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('../src/fonts/bakh_Medium.woff');
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -22368,16 +22378,12 @@ video {
   vertical-align: text-bottom;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-body {
+  font-family: Bakh;
 }
 
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.font-display {
+  font-family: Bakh;
 }
 
 .text-xs {
@@ -53947,16 +53953,12 @@ video {
     vertical-align: text-bottom;
   }
 
-  .sm\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .sm\:font-body {
+    font-family: Bakh;
   }
 
-  .sm\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .sm\:font-display {
+    font-family: Bakh;
   }
 
   .sm\:text-xs {
@@ -85174,16 +85176,12 @@ video {
     vertical-align: text-bottom;
   }
 
-  .md\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .md\:font-body {
+    font-family: Bakh;
   }
 
-  .md\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .md\:font-display {
+    font-family: Bakh;
   }
 
   .md\:text-xs {
@@ -116401,16 +116399,12 @@ video {
     vertical-align: text-bottom;
   }
 
-  .lg\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .lg\:font-body {
+    font-family: Bakh;
   }
 
-  .lg\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .lg\:font-display {
+    font-family: Bakh;
   }
 
   .lg\:text-xs {
@@ -147628,16 +147622,12 @@ video {
     vertical-align: text-bottom;
   }
 
-  .xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .xl\:font-body {
+    font-family: Bakh;
   }
 
-  .xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .xl\:font-display {
+    font-family: Bakh;
   }
 
   .xl\:text-xs {
@@ -178855,16 +178845,12 @@ video {
     vertical-align: text-bottom;
   }
 
-  .\32xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .\32xl\:font-body {
+    font-family: Bakh;
   }
 
-  .\32xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .\32xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .\32xl\:font-display {
+    font-family: Bakh;
   }
 
   .\32xl\:text-xs {

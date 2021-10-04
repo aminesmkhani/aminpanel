@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
+@font-face {
+    font-family: "Bakh";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../src/fonts/bakh_Medium.woff');
+}
 @tailwind utilities;
