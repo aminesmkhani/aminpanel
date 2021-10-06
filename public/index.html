@@ -57,6 +57,31 @@
                                 تنظیمات
                             </span>
                         </a>
+
+                        <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                            href="#">
+                            <span class="text-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                  </svg>
+                            </span>
+                            <span class="mx-4 text-sm font-normal">
+                                کاربران
+                            </span>
+                        </a>
+
+
+                        <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                        href="#">
+                        <span class="text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z" />
+                              </svg>
+                        </span>
+                        <span class="mx-4 text-sm font-normal">
+                           دسترسی ها
+                        </span>
+                    </a>
                     </div>
                 </nav>
                 <div class="absolute bottom-0 my-10">
@@ -119,7 +144,8 @@
 
                     <div class="container mx-auto px-4 sm:px-8 max-w-8xl">
 
-                        <div class="my-3  block  text-left text-white bg-green-500 h-12 flex items-center justify-center p-4 rounded-md relative"
+                        <!-- if Work Close Button Add hidden in class :) AminPanel  -->
+                        <div id="alert1" class="my-3  block  text-left text-white bg-green-500 h-12 flex items-center justify-center p-4 rounded-md relative"
                             role="alert">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 class="flex-shrink-0 w-6 h-6 mx-2 stroke-current">
@@ -128,7 +154,7 @@
                                 </path>
                             </svg>
                             این یک پیام موفقیت آمیز است.
-                            <button
+                            <button onclick="closeAlert()"
                                 class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-3 mr-6 outline-none focus:outline-none">
                                 <span>×</span>
                             </button>
@@ -281,5 +307,10 @@
 
     </div>
 </body>
-
+<script>
+    function closeAlert() {
+    var element = document.getElementById("alert1");
+    element.classList.add("hidden");
+}
+    </script>
 </html>
