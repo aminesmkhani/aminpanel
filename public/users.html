@@ -29,7 +29,7 @@
                 </div>
                 <nav class="mt-6">
                     <div>
-                        <a class="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-white to-blue-100 border-l-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-l-4 border-blue-500"
+                        <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                             href="./index.html">
                             <span class="text-left">
                                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 2048 1792"
@@ -39,13 +39,13 @@
                                     </path>
                                 </svg>
                             </span>
-                            <span class="mx-4  font-normal text-lg">
+                            <span class="mx-4  font-normal text-sm">
                                 داشبورد
                             </span>
                         </a>
 
 
-                        <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                        <a class="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-white to-blue-100 border-l-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-l-4 border-blue-500"
                             href="./users.html">
                             <span class="text-left">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
@@ -54,7 +54,7 @@
                                         d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                             </span>
-                            <span class="mx-4 text-sm font-normal">
+                            <span class="mx-4 text-lg font-normal">
                                 کاربران
                             </span>
                         </a>
@@ -164,6 +164,159 @@
 
                     <div class="container mx-auto px-4 sm:px-8 max-w-8xl">
 
+                        <!-- if Work Close Button Add hidden in class :) AminPanel  -->
+                        <div id="alert1"
+                            class="my-3  block  text-left text-white bg-green-500 h-12 flex items-center justify-center p-4 rounded-md relative"
+                            role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="flex-shrink-0 w-6 h-6 mx-2 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                                </path>
+                            </svg>
+                            این یک پیام موفقیت آمیز است.
+                            <button onclick="closeAlert()"
+                                class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-3 mr-6 outline-none focus:outline-none">
+                                <span>×</span>
+                            </button>
+                        </div>
+
+
+                        <div class="py-8">
+                            <div class="flex flex-row mb-1 sm:mb-0 justify-between w-full">
+                                <h2 class="text-2xl leading-tight">
+                                    کاربران
+                                </h2>
+                                <div class="text-end">
+                                    <form
+                                        class="flex flex-col md:flex-row w-3/4 md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
+                                        <div class=" relative ">
+                                            <input type="text" id="&quot;form-subscribe-Filter"
+                                                class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                placeholder="نام" />
+                                        </div>
+                                        <button
+                                            class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200"
+                                            type="submit">
+                                            فیلتر
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+                                <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+                                    <table class="min-w-full leading-normal">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"
+                                                    class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-right text-sm uppercase font-normal">
+                                                    کاربر
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-right text-sm uppercase font-normal">
+                                                    نقش
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-right text-sm uppercase font-normal">
+                                                    ایجاد شده در
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-right text-sm uppercase font-normal">
+                                                    وضعیت
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-right text-sm uppercase font-normal">
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <div class="flex items-center">
+                                                        <div class="flex-shrink-0">
+                                                            <a href="#" class="block relative">
+                                                                <img alt="profil" src="../src/images/1.jpg"
+                                                                    class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                                            </a>
+                                                        </div>
+                                                        <div class="mr-3">
+                                                            <p class="text-gray-900 whitespace-no-wrap">
+                                                                امین اسمخانی
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-900 whitespace-no-wrap">
+                                                        ادمین
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-900 whitespace-no-wrap">
+                                                        ۱۴۰۰-۰۷-۱۲
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 text-green-900 leading-tight">
+                                                        <span aria-hidden="true"
+                                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full">
+                                                        </span>
+                                                        <span class="relative">
+                                                            فعال
+                                                        </span>
+                                                    </span>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        ویرایش
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div
+                                        class="px-5 bg-white py-5 flex flex-col xs:flex-row items-center xs:justify-between">
+                                        <div class="flex items-center">
+                                            <button type="button"
+                                                class="w-full p-4 border text-base rounded-r-xl text-gray-600 bg-white hover:bg-gray-100">
+                                                <svg width="9" fill="currentColor" height="8" class=""
+                                                    viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1427 301l-531 531 531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19l-742-742q-19-19-19-45t19-45l742-742q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <button type="button"
+                                                class="w-full px-4 py-2 border-t border-b text-base text-indigo-500 bg-white hover:bg-gray-100 ">
+                                                ۱
+                                            </button>
+                                            <button type="button"
+                                                class="w-full px-4 py-2 border text-base text-gray-600 bg-white hover:bg-gray-100">
+                                                ۲
+                                            </button>
+                                            <button type="button"
+                                                class="w-full px-4 py-2 border-t border-b text-base text-gray-600 bg-white hover:bg-gray-100">
+                                                ۳
+                                            </button>
+                                            <button type="button"
+                                                class="w-full px-4 py-2 border text-base text-gray-600 bg-white hover:bg-gray-100">
+                                                ۴
+                                            </button>
+                                            <button type="button"
+                                                class="w-full p-4 border-t border-b border-l text-base  rounded-l-xl text-gray-600 bg-white hover:bg-gray-100">
+                                                <svg width="9" fill="currentColor" height="8" class=""
+                                                    viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
