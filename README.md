@@ -12,14 +12,14 @@ Download Project
 npm install 
 ```
 
-### Compiles for development
+### Compiles for development (if you want to develop)
 ```
-Type Console : 
+npm run build:aminpanel
 ```
 
 ### Work
 ```
-Its Work !! Read Code For More Info
+Make ❤️
 ```
 
 
